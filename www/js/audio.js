@@ -1,6 +1,6 @@
 let recordedChunks = [];
 
-const recBtn = document.getElementById('record');
+const recBtn = document.getElementById(1);
 
 let can = false;
 let is = false;
@@ -21,7 +21,6 @@ function toggleRec() {
         recorder.stop();
     }
 }
-
 
 function setAudio() {
     if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
